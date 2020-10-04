@@ -4,7 +4,7 @@ import json
 
 import UtilDevo
 
-my_app = Flask('app')
+my_app = Flask(__name__)
 CORS(my_app)
 
 @my_app.route('/datos_grafico1', methods=['GET'])
